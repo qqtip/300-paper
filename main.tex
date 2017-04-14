@@ -12,9 +12,20 @@
 
 \begin{document}
 
+%------------------%
+% COVER + ABSTRACT %
+%------------------%
 \input{sections/00_cover.tex}
 
+%-------------------%
+% TABLE OF CONTENTS %
+%-------------------%
+\tableofcontents
+\pagebreak
+
 \begin{multicols}{2}
+\setcounter{page}{1}
+
 \input{sections/01_facts.tex}
 \input{sections/02_research_question.tex}
 \input{sections/03_social_implications.tex}
@@ -22,8 +33,13 @@
 \input{sections/05_se_code_applies.tex}
 \input{sections/06_relevant_tenets.tex}
 \input{sections/07_analysis.tex}
-\end{multicols}
 
+\end{multicols}
+\pagebreak
+
+%--------------%
+% BIBLIOGRAPHY %
+%--------------%
 \bibliographystyle{bibliography/IEEEannot}
 \bibliography{bibliography/references}
 
