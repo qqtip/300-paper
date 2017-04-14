@@ -4,19 +4,27 @@
 \usepackage{url}
 \usepackage{cite}
 
+% change the page dimensions
+\usepackage{geometry} 
+\geometry{letterpaper}
+
+\usepackage{multicol}
 
 \begin{document}
 
-\input{sections/01_cover.tex}
-\input{sections/02_facts.tex}
-\input{sections/03_research_question.tex}
-\input{sections/04_social_implications.tex}
-\input{sections/05_other_arguments.tex}
-\input{sections/06_se_code_applies.tex}
-\input{sections/07_relevant_tenets.tex}
-\input{sections/08_analysis.tex}
+\input{sections/00_cover.tex}
 
-\bibliographystyle{ieeetr}
-\bibliography{sections/references.bib}
+\begin{multicols}{2}
+\input{sections/01_facts.tex}
+\input{sections/02_research_question.tex}
+\input{sections/03_social_implications.tex}
+\input{sections/04_other_arguments.tex}
+\input{sections/05_se_code_applies.tex}
+\input{sections/06_relevant_tenets.tex}
+\input{sections/07_analysis.tex}
+\end{multicols}
+
+\bibliographystyle{bibliography/IEEEannot}
+\bibliography{bibliography/references}
 
 \end{document}
