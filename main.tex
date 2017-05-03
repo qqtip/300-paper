@@ -3,6 +3,7 @@
 % bibtex packages
 \usepackage{url}
 \usepackage{cite}
+\usepackage{soul}
 
 % change the page dimensions
 \usepackage{geometry} 
@@ -17,6 +18,7 @@
 %------------------%
 % COVER + ABSTRACT %
 %------------------%
+\pagenumbering{gobble}
 \input{sections/00_cover.tex}
 
 %-------------------%
@@ -26,15 +28,14 @@
 \pagebreak
 
 \begin{multicols}{2}
+\pagenumbering{arabic}
 \setcounter{page}{1}
 
 \input{sections/01_facts.tex}
 \input{sections/02_research_question.tex}
 \input{sections/03_social_implications.tex}
 \input{sections/04_other_arguments.tex}
-\input{sections/05_se_code_applies.tex}
-\input{sections/06_relevant_tenets.tex}
-\input{sections/07_analysis.tex}
+\input{sections/05_analysis/00_index.tex}
 
 \end{multicols}
 \pagebreak
