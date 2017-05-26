@@ -3,6 +3,7 @@
 % bibtex packages
 \usepackage{url}
 \usepackage{cite}
+\usepackage{framed}
 \usepackage{soul}
 % change the page dimensions
 \usepackage{geometry} 
@@ -10,7 +11,14 @@
 
 \usepackage{multicol}
 
-\newcommand{\subsubsubsection}[1]{\vspace{5mm} \noindent \textbf{#1}}
+\newcommand{\subsubsubsection}[1]{
+	\vspace{5mm}
+	\noindent\textbf{#1}
+}
+
+\newcommand{\citeneeded}{
+	\textbf{[citation needed]}
+}
 
 \sloppy
 

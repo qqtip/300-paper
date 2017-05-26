@@ -1,18 +1,47 @@
 %!TEX root = ../../main.tex
 
+\newcommand{\tenetbox}[1]{
+    \begin{framed}
+    \emph{#1}
+    \end{framed}
+    \vspace{2mm}
+}
+
+\newcommand{\tenetsection}[1]{
+    \subsubsection{#1}
+}
+
+\newcommand{\dsr}[1]{
+    \subsubsubsection{Domain Specific Rule}
+    \begin{framed}
+    \emph{#1}
+    \end{framed}
+}
 
 %----------%
 % ANALYSIS %
 %----------%
 \section{Analysis}
-
-\newcommand{\tenetmargin}{\vspace{5mm}}
-\newcommand{\tenetbox[1]}{\emph{1}}
-
+%-----------------%
+% SE CODE APPLIES %
+%-----------------%
 \input{sections/05_analysis/01_se_code_applies}
+\pagebreak
+%---------------------%
+% PRINCIPLE 1: PUBLIC %
+%---------------------%
 \input{sections/05_analysis/02_principle_1.tex}
+%----------------------------------%
+% PRINCIPLE 2: CLIENT AND EMPLOYER %
+%----------------------------------%
 \input{sections/05_analysis/03_principle_2.tex}
+%----------------------%
+% PRINCIPLE 3: PRODUCT %
+%----------------------%
 \input{sections/05_analysis/04_principle_3.tex}
+%-------------------------%
+% PRINCIPLE 7: COLLEAGUES %
+%-------------------------%
 \input{sections/05_analysis/05_principle_7.tex}
 
 \subsection{The Intent of False News Publishers}
@@ -26,9 +55,7 @@ actors to distort domestic or foreign political sentiment''. \cite{fb_info_ops} 
 
 \par Some publishers of fake news have a skewed self-perspective, viewing themselves as fiction writers or prophets. \cite{cbs_fake_news}
 
-%
-% PRECEDENTS
-%
+
 \subsection{Precedents}
 
 \subsubsection{Burnett v. National Enquirer}
