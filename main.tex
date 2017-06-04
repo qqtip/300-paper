@@ -1,57 +1,45 @@
 \documentclass[12pt]{article}
 
-% bibtex packages
 \usepackage{url}
 \usepackage{cite}
 \usepackage{framed}
 \usepackage{soul}
-% change the page dimensions
 \usepackage{geometry} 
 \geometry{letterpaper}
-
 \usepackage{multicol}
+\usepackage{titlesec} 
+\usepackage{titletoc}
 
-\newcommand{\subsubsubsection}[1]{
-	\vspace{5mm}
-	\noindent\textbf{#1}
-}
-
-\newcommand{\citeneeded}{
-	\textbf{[citation needed]}
-}
+\input{util.tex}
 
 \sloppy
-
 \begin{document}
-
 %------------------%
 % COVER + ABSTRACT %
 %------------------% 
 \pagenumbering{gobble}
 \input{sections/00_cover.tex}
-
 %-------------------%
 % TABLE OF CONTENTS %
 %-------------------%
 \tableofcontents
 \pagebreak
-
 %----------%
 % SECTIONS %
 %----------%
 \begin{multicols}{2}
+
 \pagenumbering{arabic}
 \setcounter{page}{1}
-
 \input{sections/01_facts.tex}
-\input{sections/02_research_question.tex}
+\input{sections/02_question.tex}
 \input{sections/03_social_implications.tex}
 \input{sections/04_other_arguments.tex}
 \input{sections/05_analysis/00_index.tex}
+\input{sections/06_conclusion.tex}
 
 \end{multicols}
 \pagebreak
-
 %--------------%
 % BIBLIOGRAPHY %
 %--------------%
