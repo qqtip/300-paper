@@ -1,67 +1,168 @@
 %!TEX root=../../main.tex
 
+%========================%
+% FACEBOOK AND ITS USERS %
+%========================%
 \subsection{Facebook and its Users}
 
 \par Principle 2 of the Software Engineering Code of Ethics is concerned with the relationship between the software engineer and the client.\footnote{Principle 2 also addresses the relationship between the software engineer and employer. However, CEO of Facebook Mark Zuckerberg (who would be our employer) is an actor in this case, so we will omit him from our analysis.} \cite{se_code} Before delving into the Code, we must first establish who exactly Facebook's clients are.
-
 \par Facebook's News Feed, the software product in question, is free for users. Any user only needs to log in to his or her account to view trending stories. And News Feed is not the only product Facebook provides to users free of charge. All of Facebook's other user applications, such as Facebook Profile, Messenger, and Groups, are free for users. So is Instagram, Facebook Inc.'s other major product. \cite{fb_newsroom}
-
 \par With over a billion daily users consuming bandwidth and utilizing server resources, Facebook is extremely reliant on ad revenue. In fact, a whopping 97\% of its revenue in 2016 came from advertisements. \cite{fb_4q2016} One wonders where Facebook's loyalties lie.
 
-%---------%
-% MISSION %
-%---------%
-\subsubsection{Facebook's Mission}\label{mission}
+%--------------------%
+% FACEBOOK'S MISSION %
+%--------------------%
+\subsubsection{Facebook's Mission}
+\label{mission}
 
 \par Taken from its official website, Facebook's mission ``is to give people the power to share and make the world more open and connected. People use Facebook to stay connected with friends and family, to discover what’s going on in the world, and to share and express what matters to them.'' \cite{fb_newsroom}
-
 \par According to its mission statement, Facebook works for its users. But as a business, Facebook requires its relationship with advertisers. In fact, TechCrunch's Jordan Crook claims that Facebook \emph{gains} from the appearance of false news in its ad network.  \cite{tc_responsibility}
-
 \par In November 2016, among the responses Facebook enacted against false news was banning false news websites from its targeted advertising program, the Facebook Audience Network. \cite{tc_ban} The next fiscal quarter Facebook saw a 9\% decrease in revenue.\footnote{This follows a 29\% increase over the last two quarters.} \cite{tc_ban,fb_4q2016,fb_1q2017} 
-
 \par The software product at hand, Facebook.com (or more specifically, the Facebook News Feed), is free for users. Although users do not need to pay to use Facebook.com, Facebook's primary goal is to serve the user. Facebook's primary client, then, is the average Facebook user.\footnote{False news websites on Facebook are also technically users, but they are a minority.}
 
-%------%
-% 2.07 %
-%------%
+%------------%
+% TENET 2.07 %
+%------------%
 \subsubsection{Tenet 2.07}
 
-\tenetbox{\ul{Identify}, \ul{document}, and \ul{report} \ul{significant issues} of \ul{social concern}, of which they are aware, in \ul{software or related documents}, to the \ul{employer or the client}. \cite{se_code}}
+\tenetbox{Identify, \ul{document}, and \ul{report} \ul{significant issues} of \ul{social concern}, of which they are aware, in \ul{software or related documents}, to the \ul{employer or the client}.}
+
+\subsubsubsection{A Significant Issue}
+\label{issue}
 
 \par At the core of this tenet is the idea of a \ul{significant issue} of \ul{social concern} and how Facebook, as a software engineer, should handle it.
+\par According to the Oxford English Dictionary, an \ul{issue} is ``[a]n important topic or problem for debate''. \cite{oxford} This makes \ul{significant} redundant for our purposes. To be of \ul{concern} is to be ``of interest or importance to \emph{someone}'', \cite{oxford} which further highlights the importance of the problem at hand. In addition, it specifies an actor, a \emph{someone} to whom the \emph{problem} is important. This is tied to the \ul{social} aspect of the \ul{significant problem}.
+\par Almost two-thirds of American adults believe that false news is causing confusion about current events. \cite{bbc_propaganda} The false news epidemic reaches far beyond American borders as well, making headlines in Germany, \cite{wp_germany} France, \cite{crosscheck} and the United Kingdom. \cite{guardian_steps} So not only is false news a significant problem for American society, it affects the world. The problem of false news is then the \ul{significant issue of social concern} in our domain.
+\par The problem of false news is only a problem because it is circulating so widely and easily, and one of its major mediums is Facebook's News Feed. \cite{telegraph_fn} The problem of false news is then related to Facebook's \ul{software}.
 
-\par According to the Oxford English Dictionary, an \ul{issue} is ``[a]n \emph{important topic or problem} for debate''. \cite{oxford} This makes \ul{significant} redundant for our purposes. A \ul{concern} is ``[a] matter of interest or importance to \ul{someone}'', \cite{oxford} which further highlights the \emph{importance} of the \emph{problem} at hand. In addition, it specifies an actor, a \ul{someone} to whom the \emph{problem} is important. Now we can focus on the \ul{social} aspect of the \emph{important problem}.
+\subsubsubsection{Addressing the Issue}
 
-\par Almost two-thirds of American adults believe that false news is causing confusion about current events. \cite{bbc_propaganda} The false news epidemic reaches far beyond American borders as well, making headlines in Germany, \cite{wp_germany} France, \cite{crosscheck} and the United Kingdom. \cite{guardian_steps} So not only is the problem of false news important to American society, if affects the world. 
+\par With the idea of a \ul{significant issue} (of false news) established, we must now understand how Facebook is expected to handle it.
+\par To \ul{document} is to ``[r]ecord (something) in written, photographic, or other form.'' \cite{oxford} To \ul{report} is to ``[g]ive a spoken or written account of something that one has observed, heard, done, or investigated.'' \cite{oxford}
+\par So having identified the problem of false news, Facebook is then expected to look into the problem and provide a written account of its investigation to its \ul{employer or client}. Because it is a tech company, Facebook can be expected to record this situation electronically.
+\par Facebook is not answering to an \ul{employer} in this situation. CEO Mark Zuckerberg is deeply involved, having posted multiple times regarding false news on the Facebook News Feed. \cite{tc_responsibility} And as discussed in section \ref{mission}, Facebook's \ul{client} is the average Facebook.com user. So Facebook is then expected to provide its \ul{report}, the account of its investigation, to its users.
 
-to \ul{identify} something is tp ``[e]stablish or indicate who or what (someone or something) is.'' \cite{oxford} To \ul{document} is to ``[r]ecord (something) in written, photographic, or other form.'' \cite{oxford} To \ul{report} is to ``[g]ive a spoken or written account of something that one has observed, heard, done, or investigated.'' \cite{oxford}
+%----------------------%
+% DOMAIN SPECIFIC RULE %
+%----------------------%
+\dsr{2.07}{Facebook must identify, document, and investigate significant problems in its News Feed. Facebook must then provide a written report of its findings to its users.}
 
-\par In this situation, the \ul{issues of social concern} are the widespread misinformation of the public and \ul{software} refers to the social media network platform.
+%-----------------------%
+% PROBLEM OF FALSE NEWS %
+%-----------------------%
+\subsubsection{The Problem of False News}\label{fn_intent}
 
-\par Facebook is not answering to an \ul{employer} in this situation. CEO Mark Zuckerberg is deeply involved. As discussed in \ref{mission}, the \ul{client} is the average Facebook.com user. 
+\par In section \ref{issue} we waved a hand and suggested that false news is a problem, but we should --- like Facebook --- investigate the situation to determine its gravity. To begin we must first determine who is behind the scenes. Unfortunately, publishers of false news come from a variety of backgrounds and there is no catch-all case. \cite{cbs_fn}
 
-%-----%
-% DSR %
-%-----%
-\dsr{Facebook must identify the issue of false news and report to its users.}
+\subsubsubsection{The Commercialization of the Internet}
+
+\par Though it began as idealistic concept to revolutionize computers and communications, \cite{internet} the Internet has become a victim of capitalism.
+\par In the last half-decade, AdBlock has become a source of Internet controversy,\footnote{Whether or not the usage of AdBlock is ethical is enough discussion for its own paper.} and it exists for a reason. \cite{bbc_adblock} Without AdBlock, it is not possible to browse the Internet without being bombarded by (possibly-targeted) ads. And as the Internet userbase grew, so did the efficacy of the Internet's ad space.
+\par Internet ads are now widespread and the ultimate goal for many websites is monetization through ad space. \cite{bbc_clickbait} So for many publishers of false news, the motivation is financial. Due to the capitalization of the internet, online writers have turned to writing exciting headlines and content (of questionable accuracy) with the goal of receiving clicks. This is a major source of false news. \cite{tc_ban}
+
+\subsubsubsection{False or Fiction}
+
+\par But not all publishers of false news are financially motivated.
+\par According to an investigation by CBS' \emph{60 Minutes}, some publishers of false news simply seem to have a skewed self-perspective. Michael Cernovich, the man behind the Pizzagate story, claimed that his stories were ``100 percent true'' and ``definitely not fake'' when interviewed. \cite{cbs_fn}
+\par In addition, some view themselves as fiction writers. Jestin Coler, the man behind the National Report and the Denver Guardian\footnote{The Denver Guardian is the site responsible for one of the most circulated articles during the election --- false or otherwise --- titled ``FBI Agent Suspected In Hillary Email Leaks Found Dead In Apparent Murder-Suicide''. \cite{cbs_fn}} viewed his publications as entertainment, not information. \cite{cbs_fn} Misguided though these individuals are, their intentions are not malicious.
+\par These individuals serve to contrast with another set of false news publishers with more pernicious propensities.
+
+\subsubsubsection{Information Operations}
+\label{info_ops}
+
+\par On April 27th, Facebook published an official transparency report on usage of its social media platform for \emph{information operations}. In this case, Facebook defines \emph{information operations} as ``[a]ctions taken by governments or organized non-state actors to distort domestic or foreign political sentiment''. \cite{fb_info_ops} Information operations includes the dissemination of false news stories (via bots or otherwise) through social media to disinform the public. Here the motivation is political and the intent is to actively manipulate the beliefs of Facebook's users for personal gain.
+\par Beginning as early as November 2016 and ongoing in 2017 has been a scandal surrounding Donald Trump's administration and its ties to the Russian government. \cite{wp_russia} The FBI has been investigating allegations that the Russian government actively spread false news stories during the election to influence its outcome. Facebook, in this transparency report, investigated the usage of bots in spreading false news during the election and stated that their findings did not contradict such allegations. \cite{fb_info_ops}
+\par A Stanford study has suggested that the influence of false news on the election has been overstated. \cite{stanford_study} But the existence of these ties and the effect of false news are beside the point. What is important is the idea that some false news exists solely to disinform for personal gain.
+
+\subsubsubsection{Summary}
+
+\par Investigating false news has brought us to the conclusion that --- barring some outliers --- false news exists to take advantage of the public for personal gain. This is a problem. For Facebook \emph{not} to address false news on its News Feed is tantamount to enabling disinformation with malicious intent.
+
+%---------------------%
+% FACEBOOK'S RESPONSE %
+%---------------------%
+\subsubsection{Facebook's Response}
+
+\par \textbf{Necessary intro?}
+
+\subsubsubsection{Minimization}
+
+\par As discussed in section \ref{facts_rise}, the fake news controversy began during the 2016 election and surged in the aftermath as Facebook received a large dose of negative publicity. \cite{tc_responsibility} This is when Mark Zuckerberg first shared his personal thoughts on false news and Facebook's News Feed: ``I think the idea that fake news on Facebook... influenced the election in any way is a pretty crazy idea'' and that ``there is a profound lack of empathy in asserting that the only reason someone could've voted the way they did is fake news''. \cite{tc_responsibility} While he provided valid points supported by future research, \cite{stanford_study} his rhetoric seemed to minimize the significance of false news. \cite{tc_responsibility}
+\par Two days later, Zuckerberg posted on his Facebook profile regarding false news. In his post he reiterates that it is ``extremely unlikely hoaxes changed the outcome of this election in one direction or the other.'' ``Of all the content on Facebook... [o]nly a very small amount is fake news and hoaxes.'' \cite{zuck_resp_a} 
+
+\subsubsubsection{Acceptance}
+
+\par Within a week of his post, Zuckerberg provided an update with a more somber tone. He stated that ``[t]he bottom line is: we take misinformation seriously'' and admitted that ``[t]he problems here are complex, both technically and philosophically.'' \cite{zuck_resp_b}
+\par Though his first responses to allegations of false news on Facebook were defensive, Mark Zuckerberg eventually addressed the significance of the problem at hand. At this time he also began the process of documentation and reporting to his users. He started by outlining the projects Facebook had begun implementing, such as ``stronger detection,'' ``easier reporting,'' and ``disrupting fake news economics.'' \cite{zuck_resp_b}
+
+\subsubsubsection{A Brief Aside About Intent}
+
+\par In section \ref{fn_intent} we discussed the generally malicious intent behind false news. To reiterate: financially-motivated purveyors of false news use provocative headlines to draw clicks to their websites \cite{bbc_clickbait} and politicially-motivated publishers of false news aim to distort public sentiment in pursuit of some geopolitical strategy. \cite{fb_info_ops} 
+
+\subsubsubsubsection{Usage of Social Networks}
+
+\par One of the many advantages provided by social networks like Facebook to proliferators of false news is the ability of users to ``share'' articles. \cite{nyt_case_study} ``On its own, false news exists in a vacuum. With deliberately coordinated amplification through social networks, however, it can transform into information operations.'' \cite{fb_info_ops} While false news can be distributed systematically by bot accounts, \cite{cbs_fn} sometimes unaffiliated users will share false news unwittingly. \cite{fb_info_ops}
+
+\subsubsubsubsection{Intent and Consequence}
+
+\par To some, these unwitting user's actions differ from the actions of ``social bots'' that exist to spread false news only mathematically. Utilitarian ethics postulate that ``the right action is understood entirely in terms of consequences produced.'' \cite{util}
+
+\par The consequence --- false news propagation --- is the same no matter who shares an article. But
+for the parties behind false news, the (net) \emph{negative consequence} of their actions, amounting to disinformation and confusion of the public, matches their \emph{negative intent}. An average Facebook user may accidentally share false news, but his or her intentions may have been pure.
+
+\par In this situation, Facebook is facing a ``significant issue of social concern'', a significant problem in its News Feed. Because the actors involved are so disparate, it is important to distinguish who is an \emph{agent} and who is a \emph{victim}.
+
+\subsubsubsubsection{Agent and Victim}
+
+\par False news is often \emph{seeded} by publishers or information operators of malicious intent, meaning that these publishers and operators create or share the initial strain of false news. Their next goal is to achieve widespread circulation by either bots, users, or both sharing and re-sharing links. \cite{fb_info_ops}
+
+\par In the wake of the U.S. presidential election, the Pew Research Center found that 23\% of U.S. adults had admitted to sharing a false news story; 16\% had not been aware. \cite{pew_confusion} Furthermore, a Stanford study that evaluated 203 students found that ``more than 80 percent believed a native ad... was a real news story,'' and ``over 30 percent of students argued that [a] fake account was more trustworthy [than a verified account] because of some key graphic elements that it included.'' \cite{stanford_credibility}
+
+\cite{tc_responsibility}
+
+\subsubsubsubsection{Facebook's Intent}
+
+\par For Facebook, then, the line is not so clear. Facebook's current policies have \emph{generally} reduced the spread of false news \cite{guardian_steps} and have \emph{generally} helped educate users. \cite{guardian_steps} From a consequentialist perspective, Facebook's actions have 
+
+  it is difficult to say whether Mark Zuckerberg and Facebook are acting in the best interests of their users or if they are simply acting to maintain positive public relations.
 
 
+\subsubsubsection{Investigation}
+
+\par Being new to the fake news controversy, one might conclude a story of Facebook's stance towards false news where a defensive reaction and developed to a conscious acceptance.
+% fb identified fake news earlier
+% \cite{fb_hoaxes_2015}
 
 
-\subsubsection{The Intent of False News Publishers}
+% what happened during intervening months
 
-\par Once we have distinguished false news from satire and opinion pieces, it is important to discuss the intent of those who publish such stories. Unfortunately, there is no catch-all case for these publishers.
-
-\par Barring AdBlock, it is not possible to browse the internet without being bombarded by (possibly-targeted) ads. As internet usership grew, so did the efficacy of ad space on the internet. Ads are now widespread and the ultimate goal for some websites is monetization through adspace. \cite{bbc_clickbait} So for many publishers of false news, the motivation is financial --- the intent is to receive clicks. Due to the capitalization of the internet, online writers have turned to incitory headlines and content with the goal of receiving clicks. This is one source of fake news.
-
-\par On April 27th, Facebook published an official transparency report on usage of the social media platform for \emph{information operations}. In this case, Facebook defines \emph{information operations} as ``Actions taken by governments or organized non-state actors to distort domestic or foreign political sentiment''. \cite{fb_info_ops} Information operations includes the dissemination of false news stories (via bots or otherwise) through social media to disinform the public. Here the motivation is political and the intent is to actively manipulate the beliefs of Facebook's users for personal gain. This amounts to lying, and Kantian ethics could not apply lying as a rule. \cite{kant} Therefore, the usage of fake news for information operations is entirely unethical.
-
-\par Some publishers of fake news have a skewed self-perspective, viewing themselves as fiction writers or prophets. \cite{cbs_fn}
+% facebook published tips
 
 
-\subsubsection{Precedents}
+% other nations' elections
+% fb was open with stuff
+% cross check
+% full fact
 
-\subsubsubsection{Burnett v. National Enquirer}
+\par This transparency with its users was a quality Facebook maintained throughout its efforts against false news.
 
-\par TODO: case against National Enquirer by Carol Burnett for libel. National Enquirer paid settlement out of court. Established the possibility of celebrities to sue tabloids for defamation but also established that the national enquirer is not a real newspaper and is not subject to restrictions on journalism.
-\cite{burnett_v_ne}
+\par Following controversy around the United States presidential election, France, the United Kingdom, and Germany expressed concern about the possible effects of 
+% what was investigated
+% sharae some results I guess
+% how it affected user
+
+\subsubsubsection{Report}
+
+\par Though Facebook had been open with its users, documenting \textbf{blah blah}.
+
+% transparency report
+
+\par Facebook publised an expansive transparency report on April 27, 2017.
+\par This report, which we introduced in section \ref{info_ops}, detailed Facebook's months-long investigation of \emph{information operations} on its social network. 
+
+\par How Facebook documented the problem
+
+%------------%
+% CONCLUSION %
+%------------%
+\subsubsection{Conclusion}
