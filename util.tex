@@ -19,10 +19,11 @@
     \subsubsection{#1}
 }
 
-\newcommand{\dsr}[1]{
+\newcommand{\dsr}[2]{
     \subsubsubsection{Domain Specific Rule}
+    \par By applying Tenet #1 of the Software Engineering Code of Ethics to our domain, we can formulate the following rule:
     \begin{framed}
-    #1
+    #2
     \end{framed}
 }
 
@@ -31,27 +32,17 @@
 %--------------%
 \titleclass{\subsubsubsection}{straight}[\subsection]
 \newcounter{subsubsubsection}[subsubsection]
-\renewcommand\thesubsubsubsection{
-    \thesubsubsection.\arabic{subsubsubsection}
-}
-\renewcommand\theparagraph{
-    \thesubsubsubsection.\arabic{paragraph}
-} 
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} 
 % optional; useful if paragraphs are to be numbered
-\titleformat{\subsubsubsection}
-{\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
-\titlespacing*{\subsubsubsection}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titleformat{\subsubsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 % subsubsubsubsection
 \titleclass{\subsubsubsubsection}{straight}[\subsection]
 \newcounter{subsubsubsubsection}[subsubsubsection]
-\renewcommand\thesubsubsubsubsection{
-    \thesubsubsubsection.\arabic{subsubsubsubsection}
-}
-\renewcommand\theparagraph{
-    \thesubsubsubsubsection.\arabic{paragraph}
-}
+\renewcommand\thesubsubsubsubsection{\thesubsubsubsection.\arabic{subsubsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsubsection.\arabic{paragraph}}
 \titleformat{\subsubsubsubsection}
 {\normalfont\normalsize\bfseries}{\thesubsubsubsubsection}{1em}{}
 \titlespacing*{\subsubsubsubsection}
