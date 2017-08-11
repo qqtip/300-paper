@@ -1,0 +1,28 @@
+{
+  "name": "facebook-vs-fake-news-viewer",
+  "version": "1.0.0",
+  "description": "A view for an ethical analysis on Facebook's handling of the fake news epidemic.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quan/facebook-fakenews.git"
+  },
+  "keywords": [
+    "facebook",
+    "fake",
+    "news",
+    "false",
+    "news",
+    "latex",
+    "tex"
+  ],
+  "author": "quan tran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quan/facebook-fakenews/issues"
+  },
+  "homepage": "https://github.com/quan/facebook-fakenews#readme"
+}
